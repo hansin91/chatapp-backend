@@ -1,0 +1,15 @@
+{
+	"type": "mysql",
+	"host": "localhost",
+	"port": 3306,
+	"username": "root",
+	"password": "Surabaya91",
+	"database": "ChatApp",
+	"entities": [ "src/entities/**/**.entity{.ts,.js}" ],
+	"migrationsTableName": "migration_table",
+	"migrations": [ "migration/*.ts" ],
+	"cli": {
+		"migrationsDir": "migration"
+	},
+	"synchronize": false
+}
