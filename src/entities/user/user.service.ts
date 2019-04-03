@@ -8,7 +8,6 @@ import * as nodemailer from 'nodemailer';
 import * as googleapis from 'googleapis';
 import { LoginUserDTo } from './dto/login-user.dto';
 import { AuthService } from 'src/auth/auth.service';
-import { ModuleRef } from '@nestjs/core';
 
 @Injectable()
 export class UserService {
