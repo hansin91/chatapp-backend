@@ -10,7 +10,7 @@ export class MenuService {
 	async findMenuByModule(module: string) {
 		try {
 			const data = await this.menuRepository.find({
-				select: [ 'name', 'url', 'icon' ],
+				select: [ 'name', 'url', 'icon', 'id' ],
 				where: { isActive: true, module }
 			});
 			return {
